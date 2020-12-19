@@ -1,1 +1,1 @@
-python pip install selenium
+selenium
