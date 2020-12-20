@@ -8,6 +8,7 @@ chromeoptions.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chromeoptions)
 
 driver.get("https://www.familysearch.org/")
+print(driver.page_source)
 sign_in = driver.find_element_by_xpath('/html/body/div/header/div[2]/div[2]/nav/a[1]');
 print(sign_in.text)
 sign_in.click();
