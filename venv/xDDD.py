@@ -10,3 +10,4 @@ gChromeOptions.add_argument("disable-dev-shm-usage")
 gDriver = webdriver.Chrome(
     chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
 )
+print("EMPTY");
