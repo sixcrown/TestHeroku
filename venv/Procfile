@@ -1,2 +1,2 @@
 web: /app/.apt/usr/bin/google-chrome
-worker: python xDDD.py
+web: python xDDD.py
