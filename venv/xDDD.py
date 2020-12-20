@@ -1,5 +1,5 @@
 import time
-
+print("HELLO LOGS XD ");
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
