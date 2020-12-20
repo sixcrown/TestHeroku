@@ -10,6 +10,7 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 
 driver.get("https://www.familysearch.org/en/")
 driver.implicitly_wait(2)
+print(driver.page_source)
 acceptCookies = driver.find_element_by_xpath('/html/body/div[8]/div[1]/div/div[2]/div[2]/a[1]')
 acceptCookies.click();
 # sign_in = driver.find_element_by_xpath('/html/body/div/header/div[2]/div[2]/nav/a[1]');
