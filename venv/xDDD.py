@@ -11,8 +11,7 @@ print(gChromeOptions.headless);
 gDriver = webdriver.Chrome(
     chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
 )
-gDriver.get("https://www.python.org/")
+auto = gDriver.get("https://www.python.org/")
 time.sleep(2)
-auto = gDriver.get_screenshot_as_png()
 print(auto);
 gDriver.close()
