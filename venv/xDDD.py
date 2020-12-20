@@ -8,5 +8,5 @@ chromeoptions.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chromeoptions)
 
 driver.get("https://www.familysearch.org/pl/")
-print(driver.page_source)
+print(driver.get_cookies())
 driver.quit()
