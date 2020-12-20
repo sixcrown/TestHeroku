@@ -14,4 +14,3 @@ gDriver = webdriver.Chrome(
 gDriver.get("https://www.python.org/")
 time.sleep(2)
 print(gDriver.page_source);
-gDriver.close()
