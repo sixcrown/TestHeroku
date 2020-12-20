@@ -4,7 +4,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 gChromeOptions = webdriver.ChromeOptions()
-gChromeOptions.headless(True);
+gChromeOptions.set_headless()
 gChromeOptions.add_argument("window-size=1920x1480")
 gChromeOptions.add_argument("disable-dev-shm-usage")
 print(gChromeOptions.headless);
