@@ -11,7 +11,7 @@ print(gChromeOptions.headless);
 gDriver = webdriver.Chrome(
     chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
 )
-auto = gDriver.get("https://www.python.org/")
+gDriver.get("https://www.python.org/")
 time.sleep(2)
-print(auto);
+print(gDriver.page_source);
 gDriver.close()
